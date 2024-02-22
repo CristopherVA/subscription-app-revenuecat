@@ -1,6 +1,5 @@
-import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import React from 'react'
-
+import { View, Text, SafeAreaView, TouchableOpacity } from 'react-native'
 import { NativeStackNavigationProp } from '@react-navigation/native-stack'
 import { RootStackParamList } from '../App'
 import { useNavigation } from '@react-navigation/native'
@@ -10,7 +9,7 @@ export type NavigationProps = NativeStackNavigationProp<RootStackParamList, "Pay
 
 const PaywallScreen = () => {
 
-    const navigation = useNavigation<NavigationProps>()
+    const navigation = useNavigation<NavigationProps>();
 
     return (
         <SafeAreaView className='flex-1 bg-red-500'>
